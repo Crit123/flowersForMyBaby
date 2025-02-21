@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prototype.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Module 2</h1>
+    <h4>HTML Lists: Ordered and Unordered Lists</h4>
+    <div class="mod2">
+    <ol>
+        <li><strong>Unordered Lists (&lt;ul&gt;)</strong></li>
+        <p>An Unordered List is used when the order of items doesn't matter like a grocery list or to-do list.
+            These lists display items with bullet points.</p>
+        <p>Basic Structure: 
+            <ul>&lt;ul&gt;
+            <ul>&lt;li&gt;Milk&lt;li&gt;</ul>
+            <ul>&lt;li&gt;Bread&lt;li&gt;</ul>
+            <ul>&lt;li&gt;Eggs&lt;li&gt;</ul>
+            &lt;ul&gt;
+            </ul>
+        </p>
+        <ul>
+            <li><strong>&lt;ul&gt;:</strong> Starts the Unordered list (stands for unordered list)</li>
+            <li><strong>&lt;li&gt;:</strong> Each item inside the list is wrapped in a list item tag (&lt;li&gt;)</li>
+            <li><strong>&lt;/ul&gt;:</strong> Closes the unordered list.</li>
+        </ul>
+
+        <ul>Result:
+            <ul>&bullet;    Milk</ul>
+            <ul>&bullet;    Bread</ul>
+            <ul>&bullet;    Eggs</ul>
+        </ul> 
+    </div>     
+    <br>
+
+    <li><strong>Ordered Lists (&lt;ol&gt;)</strong></li>
+    <p>An ordered list is used when the sequence does matter-like instructions, rankings, or steps in a process.
+        These items are number automatically.</p>
+    <p>Basic Structure:
+    <ul>&lt;ol&gt;
+        <ul>&lt;li&gt;Wake Up&lt;li&gt;</ul>
+        <ul>&lt;li&gt;Brush your teeth&lt;li&gt;</ul>
+        <ul>&lt;li&gt;Have breakfast&lt;li&gt;</ul>
+        &lt;ol&gt;
+        </ul>
+    </p>
+    <ul>
+        <li><strong>&lt;ol&gt;:</strong> Starts the ordered list (stands for ordered list)</li>
+        <li><strong>&lt;li&gt;:</strong> Each item inside the list is wrapped in a list item tag (&lt;li&gt;)</li>
+        <li><strong>&lt;/ol&gt;:</strong> Closes the ordered list.</li>
+    </ul>    
+    
+    <div class="resultOL">
+        <ol>Result:
+            <ol>
+                <li>Wake up </li>
+                <li>Brush your teeth</li>
+                <li>Have breakfast</li>
+            </ol>
+        </ol>    
+    </div>
+    </ol>
+
+    <h4>Exercise</h4>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apples</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrots</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <h4>HTML lists: Nesting and Indentation</h4>
+    <h5>Exercise 1: </h5>
+    <div class="container">
+        <div class="column">
+            <h4>Code</h4>
+    <ul>&lt;ul&gt;
+        <ul>&lt;li&gt;Wake up and brush teeth&lt;/li&gt;</ul>
+        <ul>&lt;li&gt;Drink 500ml warm water&lt;/li&gt;</ul>
+        <ul>&lt;li&gt;Do yoga for an hour&lt;/li&gt;</ul>
+        <ul>&lt;li&gt;Make omelette</ul>
+        <ul>&lt;ul&gt;
+            <ul>&lt;li&gt;Whisk eggs with milk&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;Add butter to pan&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;Add in eggs and stir&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;When solid add salt&lt;/li&gt;</ul>
+        </ul>
+        <ul>&lt;/ul&gt;</ul>
+        <ul>&lt;/li&gt;</ul>
+        <ul>&lt;li&gt;Start work&lt;/li&gt;</ul>
+    &lt;/ul&gt;</ul>
+    </ul>
+        </div>
+        <div class="column">
+            <h4>Output</h4>
+            <ul>
+                <li>Wake up and brush teeth</li>
+                <li>Drink 500ml warm water</li>
+                <li>Do yoga for an hour</li>
+                <li>Make omelette</li>
+                <ul>
+                    <li>Whisk eggs with milk</li>
+                    <li>Add butter to pan</li>
+                    <li>Add in eggs and stir</li>
+                    <li>When solid add salt</li>
+                </ul>
+                <li>Start work</li>
+            </ul>
+        </div>
+    </div>
+
+    <h5>Exercise 2:</h5>
+    <div class="container">
+        <div class="column">
+        <h4>Code</h4>
+        <ul>&lt;ul&gt;
+            <ul>&lt;li&gt;A&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;B&lt;/li&gt;</ul>
+            <ul>
+                <ul>&lt;li&gt;Ba&lt;/li&gt;</ul>
+                <ul>&lt;li&gt;Bb&lt;/li&gt;
+                    <ul>&lt;li&gt;Ca&lt;/li&gt;</ul>
+                    <ul>&lt;li&gt;Cb&lt;/li&gt;</ul>
+                    <ul>&lt;li&gt;Cc&lt;/li&gt;</ul>
+                </ul>
+                <ul>&lt;li&gt;Bc&lt;/li&gt;</ul>
+            </ul>
+            <ul>&lt;li&gt;C&lt;/li&gt;</ul> 
+            &lt;/ul&gt;
+        </ul>
+    </div>
+
+    <div class="column">
+        <h4>Output</h4>
+        <ul>
+            <li>A</li>
+            <li>B
+                <ul>
+                    <li>Ba</li>
+                    <li>Bb
+                        <ul>
+                            <li>Ca</li>
+                            <li>Cb</li>
+                            <li>Cc</li>
+                        </ul>
+                    </li>
+                    <li>Bc</li>
+                </ul>
+            </li>
+            <li>C</li>
+            
+        </ul>
+    </div>
+</div>
+    
+    <h5>Exercise 3:</h5>
+    <div class="container">
+        <div class="column">
+        <h4>Code</h4>
+        <ul>&lt;ul&gt;
+            <ul>&lt;li&gtA&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;B
+                <ol>&lt;ol&gt;
+                    <ol>&lt;li&gt;A1&lt;/li&gt;</ol>
+                    <ol>&lt;li&gt;A2
+                        <ul>&lt;ul&gt;
+                            <ul>&lt;li&gt;B1
+                                <ol>&lt;ol&gt;
+                                    <ol>&lt;li&gt;D1&lt;/li&gt;</ol>
+                                    <ol>&lt;li&gt;D2&lt;/li&gt;</ol>
+                                </ol>
+                                <ol>&lt;/ol&gt;</ol>
+                            </ul>
+                            <ul>&lt;/li&gt;</ul>
+                            <ul>&lt;li&gt;B2&lt;/li&gt;</ul>
+                            <ul>&lt;li&gt;B3&lt;/li&gt;</ul>
+                        </ul>
+                        <ul>&lt;/ul&gt;</ul>
+                        <ul>&lt;li&gt;A3&lt;/li&gt;</ul>
+                    </ol>
+                    <ol>&lt;/li&gt;</ol>
+                    <ol>&lt;/ul&gt;
+                        <ol>&lt;li&gt;C1&lt;/li&gt;</ol>
+                        <ol>&lt;li&gt;C2&lt;/li&gt;</ol>
+                    </ol>
+                    <ul>&lt;/ul&gt;</ul>
+                </ol>
+                <ul>&lt;/ol&gt;</ul>
+            </ul>
+            <ul>&lt;/li&gt;</ul>
+            <ul>&lt;li&gt;C&lt;/li&gt;</ul>
+        &lt;/ul&gt;</ul>
+    </div>
+    
+    <div class="column">
+        <h4>Output</h4>
+        <ul>
+            <li>A</li>
+            <li>B
+                <ol>
+                    <li>A1</li>
+                    <li>A2
+                        <ul>
+                            <li>B1
+                                <ol>
+                                    <li>D1</li>
+                                    <li>D2</li>
+                                </ol>
+                            </li>
+                            <li>B2</li>
+                            <li>B3</li>
+                        </ul>
+                        <li>A3</li>
+                    </li>
+                    <ul>
+                        <li>C1</li>
+                        <li>C2</li>
+                    </ul>
+                </ol>
+            </li>
+        </ul>
+        <li>C</li>
+    </div>
+    </div>
+
+    <h4>HTML Attributes and the Anchor (&lt;a&gt;)</h4>
+    <p>The anchor element allows you to create links that users to another webpage,
+        a file, or even a specific section within the same page.</p>
+    <p>Basic Structure:</p>
+    <p>&lt;a&gt;Click Here&lt;/a&gt;</p>
+    <p>&bullet;&nbsp;&lt;a&gt;&nbsp;= Opening Tag <br>
+        &bullet;&nbsp;&lt;/a&gt;&nbsp;= Closing Tag<br>
+        &bullet;&nbsp;Click Here = Visible Link Yet </p>
+    <h4><strong>What Are Attribuites?</strong></h4>
+    <p>Attributes give extra information about an HTML element. They are always added to the opening tag.</p>
+    <p>They follow this format: <br>
+        &nbsp;&nbsp;&nbsp;<strong> &lt;element attribute="value"&gt;Content&lt;/element&gt;</strong> <br>
+        You can add multiple attributes, seperated by spaces.
+    </p>
+
+    <h4><strong>Making a Working Link with href</strong></h4>
+    <p>The anchor tag uses attribute called href (short for Hypertext REFerence), which defines where the link should go.</p>
+    <h4><strong>Example: Active Hyperlink</strong></h4>
+    <p>&nbsp;&nbsp;&nbsp;<strong>&lt;a href="https.//www.google.com">Visit Google &lt;/a&gt;</strong>
+    <br>&bullet;&nbsp;&nbsp;&nbsp;<strong>href="https://www.google.com/"</strong> tells the 
+        browser to go to Google when the link is clicked.
+    <br>&bullet;&nbsp;&nbsp;&nbsp;Now the text <strong>"Visit Google"</strong> will appear as a blue, underlined Hyperlink.
+    <br>&bullet;&nbsp;&nbsp;&nbsp;Without href, the text is just plain, unclickable text.</p>
+
+    <h4>Adding Multiple Attributes</h4>
+    <p>You can add more attributes to the anchor tag. For example: <br>
+        &nbsp;&nbsp;&nbsp;&lt;a href="https://www.google.com" <strong>target="_blank"</strong>&gt;Open Google in a New Tab &lt;/a&gt; </p>
+        <p>&bullet;&nbsp;&nbsp;&nbsp;taget="_blank" makes the link open in a new tab instead of the current one.
+        <br>&bullet;&nbsp;&nbsp;&nbsp;You can combine as many attributes as needed, seperated by spaces.
+        <br>&bullet;&nbsp;&nbsp;&nbsp;<strong>_self - </strong>Default. Opens the document in the same window/tab as it was clicked.
+        <br>&bullet;&nbsp;&nbsp;&nbsp;<strong>_blank - </strong>Opens the document in a new window or tab
+        <br>&bullet;&nbsp;&nbsp;&nbsp;<strong>_parent - </strong>Opens the document in the parent frame
+        <br>&bullet;&nbsp;&nbsp;&nbsp;<strong>_top - </strong>Opens the document in the full body of the window
+
+        <h4>Global Attributes</h4>
+        <p>Besides specific attributes like href, there are global attributes that work with almost any HTML tag.</p>
+        <p><strong>Example: </strong>draggable Attribute</p>
+        <p>&lt;a href="https://www.google.com/" <strong>draggable="true"</strong>&gt;Drag Me!&lt;/a&gt;</p>
+        <p>&bullet;&nbsp;&nbsp;&nbsp;draggable="true" allows you to click and drag the link around.</p>
+        <p>&bullet;&nbsp;&nbsp;&nbsp;If you remove this attribute, the link won't be draggable anymore.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other global attributes include:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bullet;&nbsp;&nbsp;&nbsp;id (for identifying an element)
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bullet;&nbsp;&nbsp;&nbsp;class (for styling with CSS)
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bullet;&nbsp;&nbsp;&nbsp;style (for inline CSS)</p>
+
+        <h4>HTML entities</h4>
+        <p>Some characters are reserved in HTML. If you use the less than (<) or greater that (>) signs in your HTML text, the browser might mix
+        them with tags. Entity names or entity number scan be used to display reserved HTML characters.</p>
+
+            <table>
+                <tr>
+                    <th><strong>Result</strong></th>
+                    <th><strong>Description</strong></th>
+                    <th><strong>Name</strong></th>
+                    <th><strong>Number</strong></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>non-breaking space</td>
+                    <td>&amp;nbsp;</td>
+                    <td>&amp;&num;160;</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>less than</td>
+                    <td>&amp;lt;</td>
+                    <td>&amp;&num;60;</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>greater than</td>
+                    <td>&amp;gt;</td>
+                    <td>&amp;&num;62;</td>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>ampersand</td>
+                    <td>&amp;amp;</td>
+                    <td>&amp;&num;38</td>
+                </tr>
+                <tr>
+                    <td>"</td>
+                    <td>double quotation mark</td>
+                    <td>&amp;quot;</td>
+                    <td>&amp;&num;34;</td>
+                </tr>
+                <tr>
+                    <td>'</td>
+                    <td>single quotation mark</td>
+                    <td>&amp;apos;</td>
+                    <td>&amp;&num;39;</td>
+                </tr>
+                <tr>
+                    <td>&cent;</td>
+                    <td>cent</td>
+                    <td>&amp;cent;</td>
+                    <td>&amp;&num;162;</td>
+                </tr>
+                <tr>
+                    <td>&pound;</td>
+                    <td>pound</td>
+                    <td>&amp;pound;</td>
+                    <td>&amp;&num;163;</td>
+                </tr>
+                <tr>
+                    <td>&yen;</td>
+                    <td>yen</td>
+                    <td>&amp;yen;</td>
+                    <td>&amp;&num;165;</td>
+                </tr>
+                <tr>
+                    <td>&euro;</td>
+                    <td>euro</td>
+                    <td>&amp;euro;</td>
+                    <td>&amp;&num;8364;</td>
+                </tr>
+                <tr>
+                    <td>&copy;</td>
+                    <td>copy</td>
+                    <td>&amp;copy;</td>
+                    <td>&amp;&num;169;</td>
+                </tr>
+                <tr>
+                    <td>&reg;</td>
+                    <td>trademark</td>
+                    <td>&amp;reg;</td>
+                    <td>&amp;&num;174;</td>
+                </tr>
+            </table>
+
+        <h4>Understanding the HTML Boilerplate</h4>
+        <p>Think of this like writing a formal letter. Just as a letter has a proper format - like a header,
+            greeting, body, and closing - an HTML document also follows a structured format. This structure
+            ensures that web browsers understand and display your content correctly. </p>
+        
+        <h4>What is an HTML Boilerplate?</h4>
+        <p>The HTML Boilerplate is the basic template you start with when creating any new HTML file. It includes
+            the essential code required to set up a web page properly.</p>
+        <p><strong>&lt;!DOCTYPE html&gt;
+        <br>&lt;html lang="en">
+        <br>&lt;head&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;
+        <br>&lt;/head&gt;
+        <br>&lt;body&gt;
+        <br>
+        <br>&lt;/body&gt;
+        <br>&lt;/html&gt;
+        </strong></p>
+
+        <div class="line">
+        <h4>Line-by-Line Breakdown</h4>
+        <ol>
+            <li><strong>&lt;!DOCTYPE html&gt;</strong></li>
+            <ul>
+                <li>This is the <strong>Document Type Declaration.</strong></li>
+                <li>Is tells the browser, <strong>"Hey, this is an HTML5 document!"</strong></li>
+            </ul>
+
+            <li><strong>&lt;html lang="en"&gt;</strong></li>
+            <ul>
+                <li>The <strong>&lt;html&gt;</strong> tag is the <strong>root element.</strong></li>
+                <li>Everything on the web page goes inside this tag.</li>
+                <li>The attribute <strong>lang="en"</strong> specifies that the page is in <strong>English</strong>, which helps with accessibility
+                and seach engines.</li>
+            </ul>
+
+            <li><strong>&lt;head&gt;</strong> Section</li>
+            <ul>
+                <li>The <strong>&lt;head&gt;</strong> tag contains <strong>meta-information</strong> about the webpage.</li>
+                <li>This is information for browsers and search engines - not the user.</li>
+                <ul>
+                    <li><strong>&lt;meta charset="UTF-8"&gt; - </strong> Sets the character encoding to <strong>UTF-8</strong>
+                    , allowing the page to display a wide range of characters (like emojis).</li>
+                    <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong>Ensures the website looks good on <strong>mobile devices</strong>
+                    by controlling the layout.</li>
+                    <li><strong>&lt;title&gt;My First Web Page&lt;/title&gt;</strong> Defines the <strong>title</strong> of the webpage, which appears on the browser tab.</li>
+                </ul>
+            </ul>
+
+            <li><strong>&lt;body&gt;</strong> Section</li>
+            <ul>
+                <li>This is where the <strong>visible content</strong> of your webpage goes.</li>
+                <li>Whatever you write inside the <strong>&lt;body&gt;</strong> tags will appear on the website.</li>
+                <ul>
+                    <li><strong>&lt;h1&gt;</strong> A heading tag, used for that main title.</li>
+                    <li><strong>&lt;p&gt;</strong> A paragraph tag for regular text.</li>
+                </ul>
+            </ul>
+
+            <li>Closing Tags: <strong>&lt;/head&gt;, &lt;/body&gt;, and &lt;/html&gt;</strong></li>
+            <ul>
+                <li>Always remember to <strong>close your tags</strong> to ensure your code works correclty.</li>
+            </ul>
+        </ol>
+        </div>
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <h1>Module 3</h1>
+        <h4><strong>What Are Forms in HTML?</strong></h4>
+        <p>You've filled out tons of forms in your life, At the doctor's office, at school, for activities and programs.
+            <br> &nbsp;&nbsp;If you want to sign up for something, chances are, you'll need to fill out a form.</p>
+
+        <h4><strong>HTML Forms: How they Work</strong></h4>
+        <p>In today's digital world, forms are usually build with HTML.</p>
+        <ul>
+            <li>An <strong>HTML form</strong> collects user input.</li>
+            <li>That input is then sent to a <strong>server</strong> for processing.</li>
+            <li>The <strong>&lt;form&gt;</strong> element is used to create a form.</li>
+        </ul>
+        <p>Think of &lt;form&gt; as a <strong>container</strong> that holds different types of input fields.</p>
+
+        <h4>The Input Element</h4>
+        <p>One of the most important elements inside a form is <strong>&lt;input&gt;</strong>. It changes its behavior depending on the
+        <strong>type</strong> attribute.</p>
+        <p><strong>Here are some common input types:</strong>
+            <ul>
+                <li>&nbsp;&nbsp;&nbsp;<strong>Text Fields - </strong>&lt;input type="text"&gt; - Single-line text entry <i>"My name is Bill"</i></li>
+                <li>&nbsp;&nbsp;&nbsp;<strong>Radio Buttons - </strong>&lt;input type="radio"&gt; - Select one option <i>"This one, the burger!"</i></li>
+                <li>&nbsp;&nbsp;&nbsp;<strong>Checkboxes - </strong> &lt;input type="checkbox"&gt; - Select multiple options <i>"Check! Check! Check! Check! (I'll take all the toppings!)"</i></li>
+            </ul>
+        </p>
+
+        <h4>Text Field: </h4>
+        <ul>
+            <li><strong>&lt;input tpe="text"&gt;</strong> creates a single-line text input.</li>
+            <li>The <strong>placeholder="My name is Bill"</strong> shows example text inside the box.</li>
+        </ul>
+        <h4>Radio Buttons: </h4>
+        <ul>
+            <li><strong>&lt;input type="radio"&gt;</strong> allows selecting <strong>only one</strong> option.</li>
+            <li>The<strong> name="toppings[]"</strong> groups them together.</li>
+        </ul>
+
+        <h4>More HTML Form Elements</h4>
+        <p>The <strong>&lt;form&gt;</strong> element is used to collect user input and send it to a server. Inside a <strong>&lt;form&gt;</strong>,
+        we can use different <strong>form elements</strong> to accept different types of user input.</p>
+        <p>In addition to <strong>&lt;input&gt;</strong>, here are some other form elements you should know:
+        </p>
+        <p><strong>&lt;input&gt; (Input Field)</strong></p>
+        <ul>
+            <li>Used to collect user input in different formats (text, email, password, number, etc).</li>
+            <li>Example:
+                <div class="example"> 
+                <ul><strong>&lt;input type="text" placeholder="Enter your name"></strong></ul>
+                </div>
+            </li>
+        </ul>
+        <p>Different <strong>type</strong> attributes define different behaviors, such as: </p>
+        <ul>
+            <li><strong>text - </strong> Single-line text field</li>
+            <li><strong>email - </strong> Email input</li>
+            <li><strong>password - </strong> Password input</li>
+            <li><strong>checkbox - </strong> checkbox selection</li>
+            <li><strong>radio - </strong> Radio button selection</li>
+        </ul>
+        <h4><strong>&lt;label&gt; (Label for Input Elements)</strong></h4>
+        <ul>
+            <li>Describes what an input field is for. Improves accessibility.</li>
+            <li>Example: </li>
+            <div class="example">
+            <ul><strong>&lt;label for="name"&gt;Enter your Name: &lt;/label&gt;</strong></ul>
+            <ul><strong>&lt;input type="text" id="name"&gt;</strong></ul>
+            </div>
+            <li>The <strong>for</strong> attribute links the <strong>&lt;label&gt;</strong> to an <strong>&lt;input&gt;</strong> field via the input's <strong>id.</strong></li>
+        </ul>
+        <h4><strong>&lt;select&gt; (Dropdown List)</strong></h4>
+        <ul>
+            <li>Creates drop-down menu where users can choose one option.</li>
+            <li>Example:</li>
+            <div class="example">
+            <ul><strong>&lt;label for="country"&gt;Choose a country: &lt;/label&gt;</strong></ul>
+            <ul><strong>&lt;select id="counter" name="country"&gt;</strong>
+            <ul><strong>&lt;option value="usa"&gt;USA&lt;/option&gt;</strong></ul>
+            <ul><strong>&lt;option value="pilipins"&gt;PH&lt;/option&gt;</strong></ul>
+            <ul><strong>&lt;option value="uk"&gt;UK&lt;/option&gt;</strong></ul></ul>
+            <ul><strong>&lt;/select&gt;</strong></ul>
+             </div>
+            <li>The <strong>&lt;option&gt;</strong> elements define each item in the dropdown.</li>
+        </ul>
+        <h4><strong>&lt;button&gt; (Clickable Button) </strong></h4>
+        <ul>
+            <li>Creates a clickable button for submitting forms or performing actions.</li>
+            <li>Example:</li>
+            <div class="example">
+                <ul><strong>&lt;button type="submit"&gt;Submit&lt;/button&gt;</strong></ul>
+            </div>
+        </ul>
+        <p>The <strong>type</strong> attribute defines behavior:</p>
+            <ul>
+                <li><strong>submit - </strong> Submits the form</li>
+                <li><strong>reser - </strong> Clears the form fields</li>
+                <li><strong>button - </strong> General-purpose button</li>
+            </ul>
+
+        <h4><strong>What Are Tables in HTML?</strong></h4>
+        <p>In this lesson, you're going to learn how to create tables in HTML.</p>
+        <h5>HTML: How to Build Tables</h5>
+        <p>Let's break down the essential tools you need to create tables in HTML.</p>
+        <ul>
+            <li>First, you'll use the <strong>&lt;table&gt;</strong> element to define a table.</li>
+            <li>To create rows, use <strong>&lt;tr&gt;</strong> elements each row gets its own <strong>&lt;tr&gt;</strong>.</li>
+            <li>Inside each row, you'll need <strong>&lt;td&gt;</strong> elements, which define individual table cells (columns).</li>
+            <li>Want headings? Use <strong>&lt;th&gt;</strong> instead of <strong>&lt;td&gt;</strong> to make column headers bold and centered
+            by defualt.</li>
+        </ul>
+        <h4><strong>HTML Table Borders</strong></h4>
+        <p>By default, tables don't have borders. If you want borders, you have to specify them using CSS.</p>
+        <ul>
+            <li>The <strong>border</strong> property adds a border to your table.</li>
+            <li>But watch out! This can create double borders.</li>
+            <li>To fix tha, use <strong>border-collapse: collapse;</strong> to merge them into a single border.</li>
+        </ul>
+        <h4><strong>HTML: Styling Tables</strong></h4>
+        <p>Want to make you table look even better? Here are some quick styling tips:</p>
+        <ul>
+            <li>Use <strong>padding</strong> to add space inside each cell.</li>
+            <li>Use <strong>text-align</strong> to control the alignment of text inside cells.</li>
+        </ul>
+        <h4><strong>HTML: Cell and Column Spanning</strong></h4>
+        <p>Now, what if you need a cell to stretch accross multiple columns?</p>
+        <ul>
+            <li>Use the <strong>colspan</strong> attribute inside a <strong>&lt;td&gt;</strong> to make a cell span multiple columns.</li>
+            <li>Similarly, use the <strong>rowspan</strong> attribute to make a cell span multiple rows.</li>
+        </ul>
+    <div class="back">
+        <a href="frontpage.html">Back to Home</a>
+    </div>
+</body>
+</html>

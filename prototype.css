@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    padding-bottom: 5px;
+    width: auto;
+    padding: 5px;
+}
+.back {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px; 
+    z-index: 1000; 
+}
+.back a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: grey;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 10px; 
+    margin: 10px;
+}
+.column {
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc
+}
+.column {
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc  
+}
+.container h4 {
+    font-family: 'Georgia';
+}
+h1 {
+    font-family: 'Georgia';
+    font-size: 50px;
+    text-align: center;
+}
+h3 {
+    font-family: sans-serif;
+    font-size: 25px;
+}
+h4 {
+    font-size: 25px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+h5 {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    font-family: sans-serif;
+}
+.exercise h4 {
+    font-family: sans-serif;
+    padding-left: 10px;
+    margin: 0;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+.exercise ul{
+    margin: 0px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+ul, ol {
+    font-size: 18px;
+}
+li {
+    font-size: 20px;
+}
+p {
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+table {
+    font-family: sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    padding-bottom: 10px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+th {
+    font-family: 'Georgia';
+    font-size: 20px;
+    background-color: #ccc;
+}
+.mod2 ul, ol, li{
+    font-size: 18px;
+}
+.line ul, ol, li{
+    font-size: 20px;
+    padding-top: 5px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #9b59b6 );
+    width: 90%;
+    margin: 20px auto;
+}
